@@ -2,14 +2,14 @@ import {FiCheck} from 'react-icons/fi'
 import { ReactComponent as TrashSVG} from './trash.svg'
 
 const iconType = {
-    "check": <FiCheck size={24}/>,
-    "delete": <TrashSVG/>,
+    "check": (color) => <FiCheck size={24} color={color}/>,
+    "delete": (color) => <TrashSVG fill={color}/>,
 }
 
-function TodoIcon({type}){
+function TodoIcon({type, color}){
     return(
         <span className={`${type}Button icono`}>
-            {iconType[type]}
+            {iconType[type](color)}
         </span>
     )
 }
