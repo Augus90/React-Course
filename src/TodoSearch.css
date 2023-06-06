@@ -1,0 +1,40 @@
+
+.searchList{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.inputTodo{
+    background: #191919;
+    color: whitesmoke;
+    width: 40vw;
+    margin-right: 40px;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+    
+}
+
+.inputTodo + button{
+    background-color: #ee8a01;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.inputTodo + button > svg{
+    justify-content: center;
+    align-content: center;
+}
+
+.inputTodo + button:focus{
+    outline-color: aliceblue;
+}
+
+.inputTodo + button:hover{
+    background-color: #eccfa5;
+}

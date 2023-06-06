@@ -1,5 +1,14 @@
+body{
+  background-color: #121212;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: whitesmoke;
 }
 
 .App-logo {
@@ -36,3 +45,5 @@
     transform: rotate(360deg);
   }
 }
+
+
